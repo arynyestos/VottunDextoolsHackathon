@@ -31,7 +31,7 @@ Guide on how to get the project up and running on a local machine. Include any d
 ```bash
 # Example command to install dependencies
 npm install
-
+```
 ## Usage
 Explain how to use your project. Provide code snippets or examples if necessary.
 
