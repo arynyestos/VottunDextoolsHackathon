@@ -13,6 +13,9 @@ interface MocProxyContract {
 }
 
 contract DCAContract {
+    //////////////////////
+    // State variables ///
+    //////////////////////
     address public docTokenAddress = 0xCB46c0ddc60D18eFEB0E586C17Af6ea36452Dae0; // Address of the DOC token contract in Rootstock testnet
     address public mocProxyAddress = 0x2820f6d4D199B8D8838A4B26F9917754B86a0c1F; // Address of the MoC proxy contract in Rootstock testnet
     address public immutable i_owner; // Address of the contract owner
@@ -21,19 +24,21 @@ contract DCAContract {
     MocProxyContract mocProxyContract = MocProxyContract(mocProxyAddress);
 
     mapping(address user => uint256 docBalance) public docBalances; // DOC balances deposited by users
-    mapping(address user => uint256 purchaseAmount) public docPurchaseAmounts; // DOC balances deposited by users
+    mapping(address user => uint256 purchaseAmount) public docPurchaseAmounts; // DOC to spend periodically on rBTC
     mapping(address user => uint256 accumulatedBtc) public rbtcBalances; // Accumulated RBTC balance of users
 
+    //////////////////////
+    // Events ////////////
+    //////////////////////
     event Deposited(address indexed user, uint256 amount);
     event Withdrawn(address indexed user, uint256 amount);
     event RbtcBought(address indexed user, address rBtcSenderContract, uint256 rbtcAmount);
     event WithdrawnBTC(address indexed user, uint256 rbtcAmount);
 
 
-    constructor() {
-        i_owner = msg.sender;
-    }
-
+    //////////////////////
+    // Modifiers /////////
+    //////////////////////
     modifier onlyOwner() {
         require(msg.sender == i_owner, "Not the contract owner");
         _;
@@ -42,8 +47,16 @@ contract DCAContract {
     modifier onlyMocProxy() {
         require(msg.sender == mocProxyAddress, "Only MoC proxy can send rBTC to DCA contract");
         _;
-    }
+    } 
     
+    constructor() {
+        i_owner = msg.sender;
+    }
+
+    
+    //////////////////////
+    // Functions /////////
+    //////////////////////
     function depositDOC(uint256 depositAmount) external {
         require(depositAmount > 0, "Amount must be greater than zero");
 
@@ -112,6 +125,9 @@ contract DCAContract {
         emit WithdrawnBTC(msg.sender, rbtcBalances[msg.sender]);
     }
 
+    //////////////////////
+    // Getter functions///
+    //////////////////////
     function getDocBalance() external view returns (uint256) {
         return docBalances[msg.sender];
     }
