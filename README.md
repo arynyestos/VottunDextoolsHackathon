@@ -8,6 +8,14 @@ BitChill is an automated Dollar-Cost Averaging (DCA) protocol designed to simpli
 - **Integration with Tropykus Protocol:** Earn a 7% APY by lending your full DOC amount in the Tropykus protocol.
 - **Collateralized Borrowing:** Use accumulated rBTC as collateral for borrowing additional DOC.
 
+## Landing page
+
+Below you can see screenshots of the landing page and core functionality:
+
+https://gamma.app/docs/Ahorra-bitcoin-a-tu-ritmo-u2c4m07fnlfo6y6?mode=doc
+
+![image](https://github.com/arynyestos/VottunDextoolsHackathon/assets/33223441/5ab90fc0-a7d6-4001-b23e-a6d54a3452d8)
+
 ## Hackathon outcome
 
 🏆 The BitChill team won the first Vottun prize, as you can see [here](https://www.linkedin.com/feed/update/urn:li:activity:7158836419665313792/). 🏆
