@@ -12,7 +12,7 @@ BitChill is an automated Dollar-Cost Averaging (DCA) protocol designed to simpli
 
 Below you can see screenshots of the landing page and core functionality:
 
-https://gamma.app/docs/Ahorra-bitcoin-a-tu-ritmo-u2c4m07fnlfo6y6?mode=doc
+![web](https://github.com/arynyestos/VottunDextoolsHackathon/assets/33223441/40dac089-ae23-4dd7-a503-350b19c01e69)
 
 ![image](https://github.com/arynyestos/VottunDextoolsHackathon/assets/33223441/5ab90fc0-a7d6-4001-b23e-a6d54a3452d8)
 
