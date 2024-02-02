@@ -1,59 +1,19 @@
-# Project Name
+# BitChill
 
-Brief description or tagline for your project.
-
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Demo](#demo)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributors](#contributors)
-- [License](#license)
-
-## Introduction
-
-Provide a brief introduction to your project. What problem does it solve? What is its main purpose?
+BitChill is an automated Dollar-Cost Averaging (DCA) protocol designed to simplify the process of investing in Bitcoin (Rootstock's rBTC) using the Dollar on Chain stablecoin (DOC). The protocol enables users to automate their Bitcoin purchases at predefined intervals, providing a sensible and user-friendly approach to saving and investing in the volatile crypto market.
 
 ## Features
 
-Highlight the key features of your project. What makes it unique or interesting?
+- **Automated DCA:** Deposit your DOC and BitChill will take care of the DCA process, automatically executing Bitcoin purchases for you.
+- **Integration with Tropykus Protocol:** Earn a 7% APY by lending your full DOC amount in the Tropykus protocol.
+- **Collateralized Borrowing:** Use accumulated rBTC as collateral for borrowing additional DOC.
 
-## Demo
+## Hackathon outcome
 
-Include a link to a live demo or screenshots/gifs showcasing your project in action.
+🏆 The BitChill team won the first Vottun prize, as you can see [here](https://www.linkedin.com/feed/update/urn:li:activity:7158836419665313792/). 🏆
 
-## Getting Started
+After 24 hours of tireless (and almost non-stop) work, we made enough progress and pitched our project well enough to be awarded the first prize.
 
-Guide on how to get the project up and running on a local machine. Include any dependencies, installation steps, or configuration instructions.
+## Disclaimer 
 
-```bash
-# Example command to install dependencies
-npm install
-```
-## Usage
-Explain how to use your project. Provide code snippets or examples if necessary.
-
-// Example code
-const myFunction = () => {
-  // Do something amazing
-};
-## Technologies Used
-List the main technologies, frameworks, and tools used in your project.
-
-Example 1
-Example 2
-...
-## Contributors
-Introduce your team members and their roles. Include links to their GitHub profiles.
-
-Team Member 1: Role
-Team Member 2: Role
-...
-## License
-Specify the license under which your project is released. For example, you can use MIT, Apache, or another open-source license.
-
-Feel free to customize the sections and content based on your project's specifics. Good luck with your hackathon project! 🚀
-
-Replace the placeholders such as "Project Name," "Introduction," "Features," etc., w
+The hackathon lasted a very short amount of time, which is why, although the smart contract, the front end and the back end were all readyish, we didn't get to combine them all toghether to make a fully functional MVP. Since I was the smart contract developer, you can see the progress I made in the smart-contracts [branch](https://github.com/arynyestos/VottunDextoolsHackathon/tree/smart-contracts). However, this repo won't be updated any longer, nor will the front and back end be uploaded here, since we intend to continue the project and have created a GitHub organization to carry on developing there. 
